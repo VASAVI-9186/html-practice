@@ -1,0 +1,29 @@
+<form>
+    <fieldset>
+        <legend>personal details</legend>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" list="namess">
+        <br><br>
+        <label for="city"> choose a city</label>
+        <input type="text" id="city" name="city" list="cities">
+    <datalist id="cities">
+        <option value="hyd"></option>
+        <option value="warangal"></option>
+        <option value="karimnagar"></option>
+    </datalist>
+        
+    </fieldset>
+</form>
+<form action="/search" method="get" target="_self">
+    <input type="text" name="city" placeholder="enter city">
+    <button type="submit">submit</button>    
+</form>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="resume">upload resume</label>
+    <button type="submit">submit</button>
+</form>
+<form novalidate>
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">submit</button>
+</form>
