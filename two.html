@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GET Method Practice</title>
+</head>
+<body>
+
+    <h2>Search City</h2>
+
+    <form action="" method="get">
+        <input type="text" name="city" placeholder="Enter city">
+        <button type="submit">Search</button>
+    </form>
+    <br><br>
+    <form action="/login" method="post">
+        <input type="text" name="usernamr">
+        <br><br>
+        <input type="password" name="password">
+        <button type="submit">login</button>
+    </form>
+    
+<label for="city">Choose city:</label>
+
+<select id="city" name="city">
+    <option value="hyd">Hyderabad</option>
+    <option value="warangal" selected>Warangal</option>
+    <option value="karimnagar">Karimnagar</option>
+</select>
+<input type="text" name="collge" value="jits" readonly>
+<input type="text" name="collge" value="jits" disabled>
+
+<form>
+    <label for="username">username</label>
+    <input type="text" id="username" name="username" minlength="4" maxlength="10" required>
+</form>
+<form>
+    <label for="marks">enter marks</label>
+    <input type="number" id="marks" name="marks" min="0" max="100" step="5">
+    <button type="submit"> submit</button>
+    <br><br>
+</form>
+<form>
+    <label for="code">enter 4 digits</label>
+    <input type="text" id="code" name="code" pattern="[0-9]{4}" title="enter exactly 4 digits" required>
+    <button type="submit"> submit</button>
+</form>
+<label for="dob">date of birth</label>
+<input type="date" id="dob" name="dob">
+<br><br>
+<label for="resume">upload resume</label>
+<input type="file" id="resume" name="resume" accepted=".pdf">
+<br>
+<label for="phone">phone number</label>
+<input type="tel" id="phone" name="phone" placeholder="enter your number">
+<br><br>
+<label for="website">website</label>
+<input type="url" id="website" name="website" placeholder="http://example.com">
+</body>
+</html>
