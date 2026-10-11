@@ -1,0 +1,64 @@
+<h2>registration form</h2>
+<form>
+    <label>name:</label>
+    <input type="text" name="username" value="vasavi">
+    <br><br>
+    <label>password</label>
+    <input type="text" id="password">
+    <br><br>
+    <input type="submit" value="done">
+</form>
+<form>
+    <input type="checkbox" id="first" name="year" value="1st">
+    <label for="first">1st year</label>
+    <br><br>
+    <input type="checkbox" id="second" name="year" value="1st">
+    <label for="second">2nd year</label>
+    <br><br>
+</form>
+<h2>feedback form</h2>
+<form>
+    <label for="feedaback" >ypur feedback</label>
+    <br>
+    <textarea name="feedback" id="feedback" rows="4" cols="40" placeholder="write your feedback here" required></textarea>
+    <br><br>
+    <input type="submit" value="submit">
+</form>
+<h3>course registration</h3>
+<form>
+    <label for="course">choose ypur course</label>
+    <select name="course" id="course">
+        <option value="cse">cse</option>
+        <option value="csm">csm</option>
+    </select>
+    <br>
+    <button style="color:blueviolet">click me</button>
+    <input type="text" name="username">
+    <button type="submit"> register</button>
+    <br><br>
+
+</form>
+<form>
+    <input type="email" name="email id">
+    <button type="reset">reset</button>
+    <br><br>
+</form>
+<form>
+    <button type="button" onclick="alert('hello vasavi')">click me</button>
+</form>
+<form>
+    <input type="text" name="value">
+
+    <button type="submit" name="action" value="save">
+        action
+    </button>
+
+    <button type="submit" formaction="/preview">
+        Preview
+    </button>
+</form>
+<form action="/search" method="get">
+    <input type="text" name="city">
+    <br>
+    <button type="submit">search</button>
+</form>
